@@ -66,6 +66,7 @@ cat << EOF >> /etc/fluent/fluent.conf
   @log_level info
   include_tag_key true
   time_key time
+  logstash_dateformat "%Y.%m.%W"
   host ${ELASTICSEARCH_HOST}
   port ${ELASTICSEARCH_PORT}
   scheme ${ELASTICSEARCH_SCHEME}
